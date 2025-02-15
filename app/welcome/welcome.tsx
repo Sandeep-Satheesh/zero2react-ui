@@ -1,5 +1,5 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
+import logoDark from "../resources/zero2react-dark.svg";
+import logoLight from "../resources/zero2react-light.svg";
 
 export function Welcome() {
   return (
@@ -9,12 +9,12 @@ export function Welcome() {
           <div className="w-[500px] max-w-[100vw] p-4">
             <img
               src={logoLight}
-              alt="React Router"
+              alt="Zero2React Logo"
               className="block w-full dark:hidden"
             />
             <img
               src={logoDark}
-              alt="React Router"
+              alt="Zero2React Logo"
               className="hidden w-full dark:block"
             />
           </div>

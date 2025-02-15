@@ -1,8 +1,15 @@
-# Welcome to React Router!
+# Zero2React
 
-A modern, production-ready template for building full-stack React applications using React Router.
+This project started off with me wanting to learn React and exploring the framework through a concrete use-case.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+I decided to build a toy investments platform to showcase my knowledge and experience with Agile development and React.
+The project is deployed through GitHub pages, while the API layer is hosted by Render.
+
+You can find links to the relevant sites below.
+
+## Relevant Links
+
+1. [![JIRA Board](https://sandeeps.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10411?size=medium)](https://sandeeps.atlassian.net/jira/software/projects/ZRUI/boards/1)
 
 ## Features
 
