@@ -1,5 +1,7 @@
 import type { Route } from "./+types/home";
-import Welcome from "../welcome/welcome"
+import Welcome from "../components/welcome/welcome"
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,6 +10,8 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+const Home : React.FC = () => {
   return <Welcome />;
 }
+
+export default Home;

@@ -1,0 +1,22 @@
+.btn-get-started {
+background-color: white;
+color: black;
+font-size: 1.2rem;
+font-weight: bold;
+padding: 12px 24px;
+border-radius: 50px;
+border: none;
+box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+transition: all 0.3s ease-in-out;
+}
+
+.btn-get-started:hover {
+background-color: rgba(255, 255, 255, 0.9);
+box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+transform: scale(1.05);
+}
+
+.btn-get-started:active {
+transform: scale(0.98);
+box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
