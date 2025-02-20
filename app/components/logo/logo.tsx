@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
-import './logo.css';
+import { useTheme } from '~/context/themecontext';
 
-const Logo : React.FC = () => {
+interface LogoProps {
+    className: string;
+}
+
+const Logo: React.FC<LogoProps> = ({ className }) => {
+    const { theme, toggleTheme } = useTheme();
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -9,12 +14,16 @@ const Logo : React.FC = () => {
     }, []);
   
     if (!isClient) return null; // Prevents hydration mismatch
-  
-  
+
+    var logoPath = 'app/assets/zero2react-dark.svg';
+
+    if (theme === 'light') {
+        logoPath = 'app/assets/zero2react-light.svg';
+    }
     return (
-        <div className="logo-container">
-            <img className="logo" src='app\assets\zero2react-dark.svg' alt="Zero2React Logo" />
-        </div>
+        <main className={className}>
+            <img src={logoPath} alt="Zero2React Logo" />
+        </main>
     );
 }
 

@@ -1,15 +1,21 @@
-@import "tailwindcss";
+@import url("bootstrap/dist/css/bootstrap.min.css");
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+:root {
+  --bg-color: white;    
+  --text-color: black;
+  --button-bg-color: black;
+  --button-text-color: white;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+  --button-bg-color: white;
+  --button-text-color: black;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
