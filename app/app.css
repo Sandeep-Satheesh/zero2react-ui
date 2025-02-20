@@ -5,6 +5,7 @@
   --text-color: black;
   --button-bg-color: black;
   --button-text-color: white;
+  --element-bg-color: lightgray;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --text-color: white;
   --button-bg-color: white;
   --button-text-color: black;
+  --element-bg-color: #333;
 }
 
 body {

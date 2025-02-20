@@ -1,0 +1,7 @@
+.footer {
+    background-color: var(--element-bg-color);
+    color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

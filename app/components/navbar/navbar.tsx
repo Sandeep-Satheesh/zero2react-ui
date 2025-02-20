@@ -6,7 +6,6 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`navbar ${theme === "dark" ? "bg-black text-light" : "bg-white text-dark"}`}>
-      <span className="navbar-brand">My App</span>
       <button onClick={toggleTheme} className="btn btn-outline-primary">
         {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
       </button>
