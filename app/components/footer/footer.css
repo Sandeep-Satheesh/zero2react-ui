@@ -5,3 +5,22 @@
     bottom: 0;
     width: 100%;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.react-logo {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from '~/context/themecontext';
-
+import './logo.css'
 interface LogoProps {
     className: string;
 }
 
 const Logo: React.FC<LogoProps> = ({ className }) => {
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -21,8 +21,8 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
         logoPath = 'app/assets/zero2react-light.svg';
     }
     return (
-        <main className={className}>
-            <img src={logoPath} alt="Zero2React Logo" />
+        <main className={className + " logo-container"}>
+            <img className="logo" src={logoPath} alt="Zero2React Logo" />
         </main>
     );
 }

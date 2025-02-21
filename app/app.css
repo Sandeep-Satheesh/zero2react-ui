@@ -5,7 +5,7 @@
   --text-color: black;
   --button-bg-color: black;
   --button-text-color: white;
-  --element-bg-color: lightgray;
+  --element-bg-color: rgb(232, 232, 232);
 }
 
 [data-theme="dark"] {

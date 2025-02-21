@@ -8,10 +8,11 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import "./app.css";
+import './app.css';
 import { ThemeProvider } from "~/context/themecontext";
 import Navbar from "~/components/navbar/navbar";
 import Footer from "~/components/footer/footer";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -46,13 +47,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <Navbar />
-      <div className="mh-100">
-        <Outlet />
-      </div>
-      <Footer />
-    </ThemeProvider>
+    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_SIGNIN_CLIENT_ID}>
+      <ThemeProvider>
+        <Navbar />
+        <div className="mh-100">
+          <Outlet />
+        </div>
+        <Footer />
+      </ThemeProvider>
+    </GoogleOAuthProvider>
   );
 }
 
