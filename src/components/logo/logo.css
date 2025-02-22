@@ -11,3 +11,7 @@
 .logo:hover {
     transform: rotateY(180deg);
 }
+
+.logo:active {
+    transform: scale(0.9);
+}

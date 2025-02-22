@@ -8,7 +8,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ className }) => {
-    const { theme } = useTheme();
+    const { theme, toggleTheme } = useTheme();
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
     }
     return (
         <main className={className + " logo-container"}>
-            <img className="logo" src={logoPath} alt="Zero2React Logo" />
+            <img className="logo" src={logoPath} alt="Zero2React Logo" onClick={toggleTheme}/>
         </main>
     );
 }
