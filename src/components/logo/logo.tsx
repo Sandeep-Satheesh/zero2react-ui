@@ -4,7 +4,7 @@ import { useTheme } from '../../context/themecontext';
 import { Utils } from '../../utils/utils';
 
 interface LogoProps {
-    className: string;
+    className?: string;
 }
 
 const Logo: React.FC<LogoProps> = ({ className }) => {
