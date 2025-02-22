@@ -1,5 +1,4 @@
 import React from "react";
-import { useTheme } from "../../context/themecontext";
 import "./footer.css";
 
 const Footer: React.FC = () => {
@@ -8,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="d-flex align-items-center justify-content-center w-100">
         <p className="m-1">Built with ❤️ in </p>
         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            src="../../src/assets/react.svg"
             alt="React Logo"
             className="d-inline react-logo"
           />

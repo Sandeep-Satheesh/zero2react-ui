@@ -1,14 +1,11 @@
-import { reactRouter } from "@react-router/dev/vite";
-import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-const isGitHubPages = process.env.NODE_ENV === "production";
+// https://vite.dev/config/
+const isGitHubPages = process.env.GH_PAGES === 'true';
+
+
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: isGitHubPages ? "/zero2react-ui/" : "/", // Dynamic base URL
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-  },
-});
+  plugins: [react()],
+  base: isGitHubPages ? "/zero2react-ui/" : "/",
+})
