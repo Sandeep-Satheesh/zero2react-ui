@@ -1,0 +1,24 @@
+.login-form-control {
+    border-radius: 50px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.login-button {
+    background-color: var(--button-bg-color) !important;
+    color: var(--button-text-color) !important;
+}
+
+input::placeholder {
+    color: var(--text-color) !important;
+    opacity: 0.7 !important;
+}
+
+.google-login-button {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    line-height: normal;
+    min-height: 40px;
+    margin-right: -3px;
+}

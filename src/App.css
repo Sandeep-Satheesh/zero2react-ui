@@ -14,8 +14,44 @@
   --element-bg-color: #333;
 }
 
+html, body, #root {
+  height: 100%;  /* Ensures it fills the full viewport height */
+  width: 100%;   /* Ensures full width */
+  margin: 0;     /* Removes unwanted spacing */
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 body {
   background-color: var(--bg-color) !important;
   color: var(--text-color) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  background-color: var(--button-bg-color) !important;
+  color: var(--button-text-color) !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px !important;
+  border: none;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s linear;
+}
+
+.btn-get-started:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+  transition: ease 0.2s;
+  transform: scale(1.1);
+}
+
+.btn-get-started:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.card {
+  background-color: var(--element-bg-color) !important;
+  color: var(--text-color) !important;
 }
