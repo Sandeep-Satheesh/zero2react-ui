@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# Zero2React 🚀  
+### Exploring React through a Challenging Use-Case  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Zero2React](https://sandeep-satheesh.github.io/zero2react-ui/logo.png)  
 
-Currently, two official plugins are available:
+## 📌 About the Project  
+**Zero2React** is a personal challenge to **learn and explore React** by building a real-world application with complex use cases. The goal is to gain deep insights into **React fundamentals, state management, routing, UI frameworks, and best practices** while working on an engaging project.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔗 Project Links  
+- 🛠 **JIRA Board**: [Zero2React JIRA](https://sandeeps.atlassian.net/jira/software/projects/ZRUI/)  
+- 🌍 **Live Demo**: [Zero2React on GitHub Pages](https://sandeep-satheesh.github.io/zero2react-ui)  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Features  
+- **React with TypeScript**: A fully typed React app for better maintainability  
+- **Component-Based Architecture**: Modular and reusable components  
+- **React Router**: Seamless navigation across pages  
+- **State Management**: Efficient handling of global and local state  
+- **Dark Mode Support**: Adaptive UI with theme switching  
+- **Authentication**: Google OAuth integration for user login  
+- **Bootstrap UI**: Clean and responsive design with Bootstrap  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🏗️ Project Structure  
+```
+zero2react-ui/
+│-- src/
+│   │-- components/        # Reusable UI components  
+│   │-- pages/             # Different app pages  
+│   │-- hooks/             # Custom React hooks  
+│   │-- styles/            # Global and component-specific styles  
+│   │-- utils/             # Utility functions  
+│   │-- App.tsx            # Root component  
+│   └── index.tsx          # React DOM entry point  
+│  
+│-- public/
+│   └── assets/            # Static assets
+│-- package.json           # Dependencies and scripts  
+│-- tsconfig.json          # TypeScript configuration  
+│-- README.md              # Project documentation  
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 Installation & Setup  
+1️⃣ **Clone the Repository**  
+```sh
+git clone https://github.com/sandeep-satheesh/zero2react-ui.git
+cd zero2react-ui
+```  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2️⃣ **Install Dependencies**  
+```sh
+npm install
+```  
+
+3️⃣ **Run the Development Server**  
+```sh
+npm run dev
+```  
+The app will be available at **http://localhost:5173**  
+
+4️⃣ **Build for Production**  
+```sh
+npm run build
+npm run deploy
+```  
+
+---
+
+## 📜 License  
+This project is licensed under the **MIT License**.  
+
+---
+
+## 📬 Contact  
+For queries or suggestions, feel free to reach out via GitHub issues! 🚀  

@@ -6,7 +6,6 @@ import { useTheme } from '../../context/themecontext';
 const Login: React.FC = () => {
     const {
         register,
-        handleSubmit,
         formState: { errors },
     } = useForm();
 

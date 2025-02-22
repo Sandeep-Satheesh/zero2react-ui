@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://sandeepsatheesh.github.io/zero2react-ui",
   "scripts": {
-    "dev": "vite",
+    "dev": "tsc -b && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
