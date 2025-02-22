@@ -1,4 +1,3 @@
-import './login.css';
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
 const Login: React.FC = () => {
     return (
