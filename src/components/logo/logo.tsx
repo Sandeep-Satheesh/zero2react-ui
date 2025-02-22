@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './logo.css'
 import { useTheme } from '../../context/themecontext';
+import { Utils } from '../../utils/utils';
 
 interface LogoProps {
     className: string;
@@ -16,10 +17,10 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
   
     if (!isClient) return null; // Prevents hydration mismatch
 
-    var logoPath = `dist/assets/zero2react-dark.svg`;
+    var logoPath = Utils.getAssetPath('zero2react-dark.svg');
 
     if (theme === 'light') {
-        logoPath = `dist/assets/zero2react-light.svg`;
+        logoPath = Utils.getAssetPath('zero2react-light.svg');
     }
     return (
         <main className={className + " logo-container"}>
