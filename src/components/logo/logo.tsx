@@ -15,10 +15,11 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
   
     if (!isClient) return null; // Prevents hydration mismatch
 
-    var logoPath = '../../src/assets/zero2react-dark.svg';
+    console.log(import.meta.env);
+    var logoPath = `${import.meta.env.BASE_URL}/assets/zero2react-dark.svg`;
 
     if (theme === 'light') {
-        logoPath = './../src/assets/zero2react-light.svg';
+        logoPath = `${import.meta.env.BASE_URL}/assets/zero2react-light.svg`;
     }
     return (
         <main className={className + " logo-container"}>
