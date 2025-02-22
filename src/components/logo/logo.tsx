@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './logo.css'
-import { useTheme } from '../../context/themecontext';
+import { useTheme } from '../../context/theme-context';
 import { Utils } from '../../utils/utils';
 
 interface LogoProps {

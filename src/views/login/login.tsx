@@ -1,7 +1,7 @@
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
 import { useForm } from "react-hook-form";
 import './login.css';
-import { useTheme } from '../../context/themecontext';
+import { useTheme } from '../../context/theme-context';
 
 const Login: React.FC = () => {
     const {

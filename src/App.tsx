@@ -1,7 +1,7 @@
 import { Routes, Route, HashRouter, useLocation } from 'react-router-dom';
 import './App.css'
 import Welcome from './views/welcome/welcome';
-import { ThemeProvider } from './context/themecontext';
+import { ThemeProvider } from './context/theme-context';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import { Utils } from './utils/utils';

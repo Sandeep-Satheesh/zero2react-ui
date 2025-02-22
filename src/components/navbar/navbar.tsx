@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../../context/themecontext";
+import { useTheme } from "../../context/theme-context";
 
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();

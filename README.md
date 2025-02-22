@@ -30,12 +30,12 @@
 zero2react-ui/
 │-- src/
 │   │-- components/        # Reusable UI components  
-│   │-- pages/             # Different app pages  
-│   │-- hooks/             # Custom React hooks  
-│   │-- styles/            # Global and component-specific styles  
-│   │-- utils/             # Utility functions  
-│   │-- App.tsx            # Root component  
-│   └── index.tsx          # React DOM entry point  
+│   │-- context/           # Custom React contexts  
+│   │-- services/          # Services for API calls to backend
+│   │-- views/             # Different app pages  
+│   │-- utils/             # Utility module  
+│   │-- App.tsx            # Root component TSX
+│   │-- App.css            # Root component CSS
 │  
 │-- public/
 │   └── assets/            # Static assets
